@@ -1,0 +1,75 @@
+@import '../../../assets/styles/common/variables';
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: $secondary-color;
+    font-family: $main-font;
+    height: 100vh;
+
+    &-menu {
+        color: $white;
+        margin-left: 4rem;
+        padding: 1rem;
+
+        &-myday,
+        &-important,
+        &-task {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1rem;
+
+        }
+
+        &-myday:hover,
+        &-important:hover,
+        &-task:hover {
+            background-color: $white;
+            color: $primary-color;
+            padding: 0.5rem;
+            border-radius: 1rem;
+            cursor: pointer;
+        }
+    }
+    &-lists{
+        &-list {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 50%;
+            gap: 1rem;
+            margin-left: 4rem;
+            padding: 0 1rem;
+            color: $white;
+            cursor: pointer;
+        }
+    }
+    
+
+    &-create-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        margin-left: 4rem;
+        padding: 1rem;
+        color: $accent-second-color;
+        i{
+            cursor: pointer;
+        }
+        &-input {
+            font-family: $main-font;
+            border: none;
+            background-color: transparent;
+            color: white;
+            outline: none;
+        }
+        
+        &-input::placeholder {
+            color: rgba($color: $white, $alpha: 0.5)
+        }
+
+    }
+}

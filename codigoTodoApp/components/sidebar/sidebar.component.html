@@ -1,0 +1,31 @@
+<aside class="sidebar">
+  <div class="sidebar-menu">
+    <div class="sidebar-menu-myday" [routerLink]="['/home']">
+      <i class="fa-solid fa-sun"></i>
+      <p>Mi día</p>
+    </div>
+    <div class="sidebar-menu-important" [routerLink]="['/important']">
+      <i class="fa-regular fa-star"></i>
+      <p>Importante</p>
+    </div>
+    <div class="sidebar-menu-task">
+      <i class="fa-solid fa-house"></i>
+      <p>Tareas</p>
+    </div>
+  </div>
+  <div class="sidebar-lists">
+    <div class="sidebar-lists-list">
+      <i class="fa-solid fa-bars"></i>
+      <p>list.title</p>
+      <i class="fa-solid fa-trash"></i>
+    </div>
+  </div>
+  <div class="sidebar-create-list">
+    <i class="fa-solid fa-plus"></i>
+    <input
+      type="text"
+      class="sidebar-create-list-input"
+      placeholder="Nueva Lista"
+    />
+  </div>
+</aside>

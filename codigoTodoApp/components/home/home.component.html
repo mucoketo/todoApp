@@ -1,0 +1,68 @@
+<div class="main">
+  <app-sidebar></app-sidebar>
+  <div class="container">
+    <div class="container-info">
+      <div class="container-info-date">
+        <div class="title">
+          <i class="fa-solid fa-sun"></i>
+          <p>Mi día</p>
+        </div>
+        <div class="container-info-date-day">
+          <span>14/03/2023</span>
+        </div>
+      </div>
+      <div class="container-info-icons">
+        <i class="fa-solid fa-arrow-down-wide-short"></i>
+        <i class="fa-solid fa-lightbulb"></i>
+      </div>
+    </div>
+    <div class="container-create-task">
+      <div class="container-create-task-input">
+        <form class="add-task">
+          <i class="fa-regular fa-circle-check"></i>
+          <input
+            type="text"
+            class="add-task-input"
+            name="title"
+            formControlName="title"
+            placeholder="Agregar una tarea"
+          />
+          <input
+            type="text"
+            class="add-task-input"
+            name="category"
+            formControlName="category"
+            placeholder="Agregar una categoría"
+          />
+          <div class="add-task-button">
+            <button class="btn">Agregar</button>
+          </div>
+        </form>
+      </div>
+      <article class="container-create-task-icons">
+        <div class="container-create-task-icons-icons">
+          <i class="fa-regular fa-calendar"></i>
+          <i class="fa-regular fa-bell"></i>
+          <i class="fa-solid fa-retweet"></i>
+        </div>
+      </article>
+    </div>
+    <article class="container-tasks">
+      <div class="container-tasks-wrapper">
+        <div class="container-tasks-input">
+          <i class="fa-regular fa-circle-check"></i>
+          <p>todo.title</p>
+        </div>
+        <div class="container-tasks-star">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-trash"></i>
+        </div>
+      </div>
+      <div class="container-tasks-info">
+        <p>todo.category</p>
+        <i class="fa-solid fa-circle fa-xs"></i>
+        <p>todo.list</p>
+      </div>
+    </article>
+  </div>
+</div>

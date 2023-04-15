@@ -1,0 +1,54 @@
+@import '../../../assets/styles/common/variables';
+
+.main{
+    display: flex;
+}
+.container {
+    font-family: $main-font;
+    padding: 1rem;
+    margin-left: 1rem;
+    width: calc(100vw - 400px);
+    &-title{
+        text-align: center;
+    }
+    &-todos-wrapper{
+        display: flex;
+        flex-direction: column;
+        &-todo{
+            display: flex;
+            flex-direction: column;
+            background: #ffffff;
+            padding: 1rem;
+            border-radius: 1rem;
+            box-shadow: 7px 7px 14px #8f8f8f,
+                -7px -7px 14px #ffffff;
+            margin-bottom: 1rem;
+            .tasks-wrapper{
+                
+                display: flex;
+                align-items: center;
+                gap:1rem;
+                justify-content: space-between;
+                .tasks-input{
+                    display: flex;
+                    align-items: center;
+                    gap:1rem;
+                }
+                .tasks-star{
+                    display: flex;
+                    gap:1rem;
+                    cursor: pointer;
+                }
+               
+            }
+            .tasks-info{
+                display: flex;
+                align-items: center;
+                gap:1rem;
+                font-size: 0.9rem;
+                color:$primary-color;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,148 @@
+@import '../../../assets/styles/common/variables';
+
+.main{
+    display: flex;
+}
+.container::-webkit-scrollbar {
+    display: none;
+}
+.container {
+    font-family: $main-font;
+    padding: 1rem;
+    margin-left: 1rem;
+    width: calc(100vw - 400px);
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    height: 90vh;
+
+    &-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+
+        &-date {
+            display: flex;
+            flex-direction: column;
+
+            .title {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 1rem;
+            }
+        }
+
+        &-icons {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1rem;
+        }
+    }
+
+    &-create-task {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        border-radius: 1rem;
+        background: #ffffff;
+        box-shadow: 7px 7px 14px #8f8f8f,
+            -7px -7px 14px #ffffff;
+        margin-bottom: 2rem;
+
+        &-input {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.5rem;
+            border-bottom: 1px solid #8f8f8f;
+            
+            .add-task {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                i {
+                    margin-right: 1rem;
+                }
+                &-button {
+                    margin-left: 1rem;
+                    .btn {
+                        background-color: transparent;
+                        border: 1px solid #8f8f8f;
+                        border-radius: 0.5rem;
+                        padding: 0.45rem;
+                    }
+
+                    .btn:hover {
+                        border: none;
+                        background-color: $primary-color;
+                        color: $white;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            input {
+                border: none;
+            }
+            
+        }
+        
+
+        &-icons {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.5rem 0.5rem 0 0.5rem;
+
+            &-icons {
+                display: flex;
+                gap: 1rem;
+            }
+        }
+    }
+
+    &-tasks {
+        display: flex;
+        flex-direction: column;
+        border-radius: 1rem;
+        background: #ffffff;
+        box-shadow: 7px 7px 14px #8f8f8f,
+        -7px -7px 14px #ffffff;
+        margin-bottom: 1rem;
+        &-wrapper{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 0.5rem;
+
+        }
+        &-input {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            gap: 1rem;
+            padding: 0 0.5rem;
+        }
+        &-star{
+            cursor: pointer;
+            display: flex;
+            gap:1rem;
+            margin-right: 1rem;
+        }
+        &-info{
+            display: flex;
+            align-items: center;
+            gap:1rem;
+            font-size: 0.9rem;
+            color: #8f8f8f;
+            padding: 0 0.5rem 0 0.5rem;
+        }
+    }
+}
